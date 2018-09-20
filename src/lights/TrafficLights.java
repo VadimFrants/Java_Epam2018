@@ -13,7 +13,7 @@ public class TrafficLights {
     Scanner in = new Scanner(System.in);
 
     private void setTime() {
-        System.out.println("Введите время от 0 до 60. Для выхода введите больше 60");
+        System.out.println("Insert time( from 0 to 60). For turn off the program insert more than 60");
         this.time = in.nextInt();
     }
 
@@ -21,14 +21,14 @@ public class TrafficLights {
         for (int i = 0; i < 60; i++){
             setTime();
             if(time>60){
-                System.out.println("Выход из программы");
-                break;
+                System.out.println("Turning off");
+                i = time;
             } else if ( ((time % 10) >= 0) && ((time % 10) < 3) ){
-                System.out.println("Красный");
+                System.out.println("Red");
             } else if ( ((time % 10) >= 3) && ( (time % 10) <= 5) ){
-                System.out.println("Желтый");
-            } else if (((time % 10) > 5) && ((time % 10) <10)) {
-                System.out.println("Зеленый");
+                System.out.println("Yellow");
+            } else if (((time % 10) > 5) && ((time % 10) <=9)) {
+                System.out.println("Green");
             }
             if (i==59){
                 i=0;
