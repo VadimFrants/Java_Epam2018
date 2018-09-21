@@ -9,6 +9,6 @@ public class Test {
 
     public static void main(String[] args){
         TrafficLights tf = new TrafficLights();
-        tf.light();
+        tf.checkLight();
     }
 }

@@ -17,7 +17,7 @@ public class TrafficLights {
         this.time = in.nextInt();
     }
 
-    public void light(){
+    public void checkLight(){
         for (int i = 0; i < 60; i++){
             setTime();
             if(time>60){
