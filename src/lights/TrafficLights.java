@@ -13,16 +13,16 @@ public class TrafficLights {
     Scanner in = new Scanner(System.in);
 
     private void setTime() {
-        System.out.println("Insert time( from 0 to 60). For turn off the program insert more than 60");
+        System.out.println("Insert time(from 0 to 60). For turn off the program insert more than 60");
         this.time = in.nextInt();
     }
 
     public void checkLight(){
         for (int i = 0; i < 60; i++){
             setTime();
-            if(time>60){
+            if((time>60) || (time<0)){
                 System.out.println("Turning off");
-                i = time;
+                i = 60;
             } else if ( ((time % 10) >= 0) && ((time % 10) < 3) ){
                 System.out.println("Red");
             } else if ( ((time % 10) >= 3) && ( (time % 10) <= 5) ){
