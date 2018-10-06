@@ -3,3 +3,4 @@ Repository for Epam Java training tasks.
 At this moment it contains:
 
 Task 01: Traffic Light
+Task 02: String Tasks
